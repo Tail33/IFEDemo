@@ -1,0 +1,66 @@
+/* reset */
+html{
+    font-size:625%;/*100px*/
+}
+
+body{
+    margin: 0;
+    font-size:.16rem;
+}
+
+
+/* 表单info */
+#info{
+    display:-webkit-flex;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    width:9.2rem;
+    margin:auto;
+    padding: 1rem 1rem 0 0;
+    box-sizing: border-box;
+}
+
+#info>div{
+    margin-top: .25rem;
+}
+
+label{
+    font-size: .24rem;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.input-wrap{
+    float: right;
+    margin-left: .2rem;
+}
+
+.input-wrap>p{
+    display: none;
+    margin: .05rem 0 .2rem 0;
+    color:#aaa;
+    font-weight: bold;
+}
+
+input{
+    outline: none;
+    width:6.4rem;
+    height: .5rem;
+    border:2px solid #ccc;
+    border-radius: .05rem;
+    font-size: .22rem;
+    
+    text-indent: .18rem;
+}
+
+button{
+    border: none;
+    outline: none;
+    width:1rem;
+    height: .5rem;
+    font-size: .24rem;
+    background-color: #306fb0;
+    color: #fff;
+    border-radius: .05rem;
+}

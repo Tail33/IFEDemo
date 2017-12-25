@@ -1,0 +1,69 @@
+html{
+    font-size: 625%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: .27rem;
+    font-weight: bold;
+}
+
+form{
+    margin:1rem 1rem;
+   
+}
+
+.mc{
+    display: inline-block;
+    margin-right: .5rem;
+    line-height: 2.4814;
+
+}
+
+.mc-input{
+    line-height: 2.4814;
+    width:5.38rem;
+    border:none;
+    border:2px solid #ccc;
+    border-radius: .1rem;
+    font-size: .27rem;
+    outline:none;
+}
+
+
+
+.yz-btn{
+    width:1.07rem;
+    line-height: 2.4814;
+    background-color: #2f79ba;
+    padding: 0;
+    margin-left: .2rem;
+    font-size: .27rem;
+    border:none;
+    border-radius: 5px;
+
+    color: #fff;
+}
+
+.ts{
+    padding-left: 1.08rem;
+    color: #a9a9a9;
+    line-height: 2;
+}
+
+.red-input{
+    border-color: red;
+}
+
+.red-ts{
+    color:red;
+}
+
+.green-input{
+    border-color: #6bbf50;
+}
+
+.green-ts{
+    color:#6bbf50;
+}

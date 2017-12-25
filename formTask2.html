@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/formTask2.css">
+    <title>多个表单项的验证</title>
+</head>
+<body>
+    <form action="#" id="info">
+        <div id="userName-wrap">
+            <label for="userName">账号</label>
+            <div class="input-wrap">
+            <input type="text" name="userName" />
+            <p>必填,长度为4~16位字母和数字组合的字符</p>
+            </div>
+        </div>
+
+        <div id="userPassword-wrap">
+            <label for="userPassword">密码</label>
+            <div class="input-wrap">
+            <input type="password" name="userPassword">
+            <p>输入8~16位的密码</p>
+            </div>
+        </div>
+        <div id="notarizePassword-wrap">
+            <label for="notarizePassword">密码确认</label>
+            <div class="input-wrap">
+            <input type="password" name="notarizePassword">
+            <p>再次确认密码</p>
+            </div>
+        </div>
+        <div id="userEmail-wrap">
+            <label for="userEmail">邮箱</label>
+            <div class="input-wrap">
+            <input type="text" name="userEmail">
+            <p>输入邮箱</p>
+            </div>
+        </div>
+        <div id="userPhone-wrap">
+            <label for="userPhone">手机</label>
+            <div class="input-wrap">
+            <input type="text" name="userPhone">
+            <p>输入11位数字手机</p>
+            </div>
+        </div>
+        <div id="userName-wrap">
+            <button id="info-btn">提交</button>
+        </div>
+    </form>
+
+    <script src="js/myJsFun.js"></script>
+    <script src="js/formTask.js"></script>
+</body>
+</html>
