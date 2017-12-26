@@ -8,7 +8,7 @@
     <title>多个表单项的验证</title>
 </head>
 <body>
-    <form action="#" id="info">
+    <form action="#" id="info" class="float-left">
         <div id="userName-wrap">
             <label for="userName">账号</label>
             <div class="input-wrap">
@@ -46,9 +46,11 @@
             </div>
         </div>
         <div id="userName-wrap">
-            <button id="info-btn">提交</button>
+            <span id="btn-tip" class="tip-style"></span>
+            <button id="info-btn" class="reset-btn">提交</button>
         </div>
     </form>
+    <table id="data-table" border="1" class="float-left table-hide"></table>
 
     <script src="js/myJsFun.js"></script>
     <script src="js/formTask.js"></script>

@@ -6,6 +6,7 @@ html{
 body{
     margin: 0;
     font-size:.16rem;
+    padding-top: 1rem;
 }
 
 
@@ -17,7 +18,7 @@ body{
     align-items: flex-end;
     width:9.2rem;
     margin:auto;
-    padding: 1rem 1rem 0 0;
+    padding: 0 1rem 0 0;
     box-sizing: border-box;
 }
 
@@ -54,7 +55,7 @@ input{
     text-indent: .18rem;
 }
 
-button{
+.reset-btn{
     border: none;
     outline: none;
     width:1rem;
@@ -63,4 +64,17 @@ button{
     background-color: #306fb0;
     color: #fff;
     border-radius: .05rem;
+}
+
+.tip-style{
+    color:red;
+}
+
+
+.float-left{
+    float: left;
+}
+
+.table-hide{
+    margin-top: .5rem;
 }
