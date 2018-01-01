@@ -1,8 +1,8 @@
-/* reset */
-html{
-    font-size:625%;/*100px*/
-}
 
+/* html{
+    font-size:625%;
+} */
+/* 
 body{
     margin: 0;
     font-size:.16rem;
@@ -10,7 +10,7 @@ body{
 }
 
 
-/* 表单info */
+
 #info{
     display:-webkit-flex;
     display: flex;
@@ -77,4 +77,32 @@ input{
 
 .table-hide{
     margin-top: .5rem;
+} */
+
+
+
+.bs-example {
+    padding: 20px 0;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.bs-example label{
+    padding-left: 0;
+    text-align: right;
+}
+
+.tip-style{
+    color:red;
+}
+
+
+
+
+
+#data-table td{
+    vertical-align: middle;
+
 }

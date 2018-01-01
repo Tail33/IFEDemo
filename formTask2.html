@@ -1,58 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
     <link rel="stylesheet" href="css/formTask2.css">
     <title>多个表单项的验证</title>
 </head>
+
 <body>
-    <form action="#" id="info" class="float-left">
-        <div id="userName-wrap">
-            <label for="userName">账号</label>
-            <div class="input-wrap">
-            <input type="text" name="userName" />
-            <p>必填,长度为4~16位字母和数字组合的字符</p>
-            </div>
+    <div class="container bs-example">
+        <div class="col-sm-6">
+            <h1 class="page-header">表单验证</h1>
+            <!-- 验证表单 -->
+            <form action="#" id="info" class="form-horizontal">
+                <div class=" form-group-lg form-group" id="userName-wrap">
+                    <label class="col-sm-2 control-label" for="userName">账号</label>
+                    <div class="input-wrap col-sm-8">
+                        <div>
+                            <input class="form-control" type="text" name="userName" value="11111" />
+                            <p class="help-block">必填,长度为4~16位字母或数字的字符</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" form-group-lg form-group" id="userPassword-wrap">
+                    <label class="col-sm-2 control-label" for="userPassword">密码</label>
+                    <div class="input-wrap col-sm-8 ">
+                        <div>
+                            <input class="form-control" type="password" name="userPassword" value="11111111">
+                            <p class="help-block">输入4~16位的密码</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" form-group-lg form-group" id="notarizePassword-wrap">
+                    <label class="col-sm-2 control-label" for="notarizePassword">密码确认</label>
+                    <div class="input-wrap col-sm-8 ">
+                        <div>
+                            <input class="form-control" type="password" name="notarizePassword" value="11111111">
+                            <p class="help-block">再次确认密码</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" form-group-lg form-group" id="userEmail-wrap">
+                    <label class="col-sm-2 control-label" for="userEmail">邮箱</label>
+                    <div class="input-wrap col-sm-8 ">
+                        <div>
+                            <input class="form-control" type="text" name="userEmail" value="123@qq.com">
+                            <p class="help-block">输入邮箱</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" form-group-lg form-group" id="userPhone-wrap">
+                    <label class="col-sm-2 control-label" for="userPhone">手机</label>
+                    <div class="input-wrap col-sm-8 ">
+                        <div>
+                            <input class="form-control" type="text" name="userPhone" value="13888888888">
+                            <p class="help-block">输入11位数字手机</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="userName-wrap " class="">
+                    <span id="btn-tip" class="tip-style col-sm-8  text-right help-block "></span>
+                    <button id="info-btn" class="reset-btn btn btn-default col-sm-2">提交</button>
+                </div>
+            </form>
         </div>
 
-        <div id="userPassword-wrap">
-            <label for="userPassword">密码</label>
-            <div class="input-wrap">
-            <input type="password" name="userPassword">
-            <p>输入8~16位的密码</p>
-            </div>
+        <div class="col-sm-6">
+            <h1 class="page-header" style="color:#fff">提交后显示在表格上</h1>
+            <table id="data-table" class="table table-hover"></table>
         </div>
-        <div id="notarizePassword-wrap">
-            <label for="notarizePassword">密码确认</label>
-            <div class="input-wrap">
-            <input type="password" name="notarizePassword">
-            <p>再次确认密码</p>
-            </div>
-        </div>
-        <div id="userEmail-wrap">
-            <label for="userEmail">邮箱</label>
-            <div class="input-wrap">
-            <input type="text" name="userEmail">
-            <p>输入邮箱</p>
-            </div>
-        </div>
-        <div id="userPhone-wrap">
-            <label for="userPhone">手机</label>
-            <div class="input-wrap">
-            <input type="text" name="userPhone">
-            <p>输入11位数字手机</p>
-            </div>
-        </div>
-        <div id="userName-wrap">
-            <span id="btn-tip" class="tip-style"></span>
-            <button id="info-btn" class="reset-btn">提交</button>
-        </div>
-    </form>
-    <table id="data-table" border="1" class="float-left table-hide"></table>
 
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <script src="js/myJsFun.js"></script>
     <script src="js/formTask.js"></script>
 </body>
+
 </html>
